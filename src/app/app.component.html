@@ -1,0 +1,15 @@
+<div class="container" style="text-align: center;">
+    <h1 style="padding: 30px; font-size: 40px;">Simple Calculator</h1>
+    <br>
+    <input style="border-radius: 3px; font-weight: bold; font-size: 20px; height: 25px;" type="number" name="num1" [(ngModel)]="num1">
+    <input style="border-radius: 3px; font-weight: bold; font-size: 20px; height: 25px;" type="number" name="num2" [(ngModel)]="num2">
+    <br><br>
+    <button style="background-color: rgb(35, 212, 153); margin: 8px; width: 5%; height: 30px; border-radius: 3px;" (click)="add()">ADD</button>
+    <button style="background-color: rgb(35, 126, 212); margin: 8px; width: 5%; height: 30px; border-radius: 3px;" (click)="sub()">SUB</button>
+    <button style="background-color: rgb(155, 230, 17); margin: 8px; width: 5%; height: 30px; border-radius: 3px;" (click)="multiply()">MUL</button>
+    <button style="background-color: rgb(214, 31, 123); margin: 8px; width: 5%; height: 30px; border-radius: 3px;" (click)="divide()">DIV</button>
+    <br><br>
+<h3 style="font-weight: bold; font-size: 35px;"> Ans: {{num3}}</h3>
+</div>
+
+<router-outlet></router-outlet>
